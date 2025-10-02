@@ -1,3 +1,77 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: lightgrey;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f0f4f8 0%, #e0e7ff 100%);
+    color: #222;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3b82f6;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #6366f1;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #a5b4fc;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+ul {
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    padding-left: 8px;
+    position: relative;
+}
+li::before {
+    content: '•';
+    color: #6366f1;
+    position: absolute;
+    left: -16px;
+    font-size: 1.2rem;
+}
+
+/* Contacto */
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px 4px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    p, li {
+        font-size: 1rem;
+    }
 }
