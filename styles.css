@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,7 @@ body {
     background: linear-gradient(120deg, #f0f4f8 0%, #e0e7ff 100%);
     color: #222;
     min-height: 100vh;
-    padding: 40px 0;
+    padding: 40px 40px;
 }
 
 h1 {
@@ -54,24 +53,4 @@ li::before {
     position: absolute;
     left: -16px;
     font-size: 1.2rem;
-}
-
-/* Contacto */
-p:last-of-type {
-    margin-bottom: 0;
-}
-
-@media (max-width: 600px) {
-    body {
-        padding: 16px 4px;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.2rem;
-    }
-    p, li {
-        font-size: 1rem;
-    }
 }
